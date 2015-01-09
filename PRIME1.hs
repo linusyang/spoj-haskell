@@ -1,3 +1,5 @@
+-- Copyright (c) 2015 Linus Yang
+
 module Main where
 
 primes :: [Int]
@@ -36,7 +38,7 @@ printPrimePairs p = do
            mapM_ print $ primesBetween a b
            putChar '\n'
        ) $ init p
- mapM_ print $ primesBetween x y where (x, y) = last p
+ mapM_ print $ primesBetween x y where (x, y) = last p -- No additional new line at the end!
 
 readPairs :: Int -> IO [(Int, Int)]
 readPairs 0 = return []

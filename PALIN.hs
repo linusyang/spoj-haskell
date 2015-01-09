@@ -1,3 +1,5 @@
+-- Copyright (c) 2015 Linus Yang
+
 module Main where
 import Data.Char (ord, chr)
 import qualified Data.Sequence as S
@@ -45,7 +47,7 @@ printIntList = mapM_ (\x -> putChar $ chr (x + ord '0'))
 
 readIntList :: IO [Int]
 readIntList = do
-  xs <- getLine
+  xs <- getLine -- EOF will kill you if using getChar!
   return $ map (\x -> ord x - ord '0') xs
 
 readLoop :: Int -> IO ()
