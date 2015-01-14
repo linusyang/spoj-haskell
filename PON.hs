@@ -1,3 +1,5 @@
+-- Copyright (c) 2015 Linus Yang
+
 module Main where
 
 import System.Random

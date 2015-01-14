@@ -1,3 +1,5 @@
+-- Copyright (c) 2015 Linus Yang
+
 module Main where
 import Data.Char (isLower, isUpper, toLower, toUpper)
 import Data.List (isInfixOf)

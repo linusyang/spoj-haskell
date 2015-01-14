@@ -1,3 +1,5 @@
+-- Copyright (c) 2015 Linus Yang
+
 module Main where
 digits n = n : (map (\x -> (x * n) `mod` 10) $ digits n)
 rotate xs = last xs : init xs
